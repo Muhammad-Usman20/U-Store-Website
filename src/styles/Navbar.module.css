@@ -1,0 +1,84 @@
+
+.navbar {
+    background: #18b2b2;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+/* Links in desktop */
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navLinks li a:hover {
+    color: #e41313;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    background: #e0e0e0;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* ========== Mobile View ========== */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+        /* hidden by default */
+        width: 150px;
+    }
+
+    .showMenu {
+        display: flex;
+        /* show when open */
+        animation: slideDown 0.3s ease;
+    }
+}
+
+/* Slide animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

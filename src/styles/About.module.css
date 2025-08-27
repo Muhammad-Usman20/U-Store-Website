@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(177, 254, 254)
+}
+.container {
+  padding: 40px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.heading {
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+.heading1{
+    color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1 rem;
+
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 600px) {
+  .heading { font-size: 1.8rem; }
+}
+
+
+
+
