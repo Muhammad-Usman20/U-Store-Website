@@ -27,7 +27,7 @@ export default function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            <h2 className={styles.logo}>E-Commerce</h2>
+            <h2 className={styles.logo}>U-Store</h2>
 
             {/* Hamburger Button */}
             <div
